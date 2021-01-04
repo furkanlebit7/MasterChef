@@ -1,0 +1,218 @@
+header{
+    height: 100vh;
+    width: 100%;
+z-index: 1;
+position: relative;
+}
+
+nav{
+    height: 100px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color:rgba(0,0,0,0.4);
+}
+
+.nav-links{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+
+    .nav-item{
+        color: #EBEBEB;
+        font-size: .95rem;
+        font-weight: 400;
+        font-family: 'Poppins', sans-serif;
+    }
+}
+
+.main-text{
+    position: absolute;
+    font-size: 6rem;
+    top: 30%;
+    left: 50%;
+    transform: translateX(-50%);
+    text-align: center;
+    color: white;
+    font-family: 'Purple Purse', cursive;
+    
+}
+.resmi-websitesi{
+    font-family: 'Qwigley', cursive;
+    font-size: 4rem;
+    color: white;
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.main-explanation{
+    position: absolute;
+    bottom: 10%;
+    left: 50%;
+    transform: translateX(-50%);
+    font-family: 'Rancho', cursive;
+    color: white;
+    font-size: 1.4rem;
+}
+
+.background-img{
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    background-image: url(../images/mainPage.jpg);
+    z-index: -1;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-color:rgba(0,0,0,0.4);
+    filter: blur(3px);
+    opacity: 0.9;
+}
+
+.section-seflerimiz{
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 5% 1fr 5%;
+
+}
+.seflerimiz-content{
+    align-self: center;
+    text-align: center;
+    grid-column: 2/3;
+}
+.section-tag{
+    align-self: center;
+    text-align: center;
+    grid-column: 2/3;
+    font-size: 3rem;
+    font-family: 'Poppins', sans-serif;
+}
+.chef-links{
+    padding-top: 20px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+.chef-item{
+    font-size: 1.2rem;
+    color: black;
+    font-family: 'Rancho', cursive;
+
+    &:hover{
+        text-decoration:underline;
+        color: #E26340;
+    }
+}
+
+.section-yarismacilar{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 5% 1fr 5%;
+
+    .yarismacilar-content{
+        padding-top: 50px;
+        grid-column: 2/3;
+        display: grid;
+        grid-template-columns: auto auto auto;
+        grid-template-rows: auto auto 50px;
+        row-gap: 50px;
+
+        .card{
+            border: none;
+            justify-self: center;
+            align-self: center;
+            align-content: center;
+            width: 220px;
+
+            .card-name{
+                margin-top: 10px;
+                text-align: center;
+                font-size: 1.1rem;
+                color: black;
+                font-family: 'Rancho', cursive;
+            }
+        }
+
+        
+    }
+}
+
+.daha-fazla-gor{
+    height: 100px;
+    font-size: 1rem;
+    color: black;
+    font-family: 'Rancho', cursive;
+    grid-column: 2/3;
+    text-align: center;
+    padding: auto;
+
+    &:hover{
+        text-decoration:underline;
+    }
+}
+
+
+.section-yemek-tarifleri{
+    height: 100%;
+    display: grid;
+    grid-template-columns: 5% 1fr 5%;
+
+    .yemek-tarifleri-content{
+        padding-top: 70px;
+        grid-column: 2/3;
+        display: grid;
+        grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr;
+        grid-template-rows: auto auto 50px;
+        text-align: center;
+        row-gap: 50px;
+
+        .card-up-l{
+            padding-bottom:10px;
+            border: black 1px solid;
+            width: min-content;
+            justify-self: center;
+            align-self: center;
+            grid-column: 1/4;
+        }
+        .card-up-r{
+            padding-bottom:10px;
+            border: black 1px solid;
+            width: min-content;
+            justify-self: center;
+            align-self: center;
+            grid-column: 4/7;
+        }
+        .yemek-name{
+            padding-top: 15px;
+            font-size: 1.4rem;
+        }
+        .yemek-explanation{
+            text-align: center;
+            font-size: 1rem;
+            max-width: 90%;
+            margin: auto;
+        }
+
+        .card-down{
+            justify-self: center;
+            align-self: flex-start;
+            padding-bottom:10px;
+            border: black 1px solid;
+            height: 382px;
+            width: min-content;
+            grid-column: span 2;
+        }
+    }
+}
+
+
+.section-master{
+    img{
+        height: 350px;
+        width: 100%;
+    }
+}
