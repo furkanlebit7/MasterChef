@@ -171,12 +171,32 @@ nav{
         row-gap: 50px;
 
         .card-up-l{
+            color: black;
             padding-bottom:10px;
             border: black 1px solid;
             width: min-content;
             justify-self: center;
             align-self: center;
             grid-column: 1/4;
+            overflow: hidden;
+
+            img{
+                transition: transform .5s ease-in-out;
+            }
+
+            h4,p{
+                color: black;
+            }
+
+            &:hover{
+                img{
+                    background-size: inherit;
+                    transform: scale(1.7) rotate(25deg);
+                }
+            }
+        }
+        .card-image-up{
+            overflow: hidden;
         }
         .card-up-r{
             padding-bottom:10px;
@@ -185,6 +205,23 @@ nav{
             justify-self: center;
             align-self: center;
             grid-column: 4/7;
+            overflow: hidden;
+            img{
+                transition: transform .5s ease-in-out;
+            }
+
+            h4,p{
+                color: black;
+            }
+
+            &:hover{
+                img{
+                    background-size: inherit;
+                    transform: scale(1.7) rotate(25deg);
+                }
+            }
+            
+            
         }
         .yemek-name{
             padding-top: 15px;
@@ -205,8 +242,27 @@ nav{
             height: 382px;
             width: min-content;
             grid-column: span 2;
+            img{
+                transition: transform .5s ease-in-out;
+            }
+
+            h5,p{
+                color: black;
+            }
+
+            &:hover{
+                img{
+                    background-size: inherit;
+                    transform: scale(1.7) rotate(25deg);
+                }
+            }
+        }
+
+        .card-image-down{
+            overflow: hidden;
         }
     }
+
 }
 
 
@@ -215,4 +271,109 @@ nav{
         height: 350px;
         width: 100%;
     }
+}
+
+.section-footer{
+    background-color: #E26340;
+    height: 100%;
+    width: 100%;
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 1fr 1fr 5%;
+    font-family: 'Poppins', sans-serif;
+
+    .service{
+        padding-top: 20px;
+        align-self: flex-start;
+        grid-column: 2/3;
+        display: flex;
+        flex-direction: column;
+        justify-content: space-around;
+        align-items: flex-start;
+
+        a{
+            padding-bottom: 13px;
+            color: white;
+            font-size: 1rem;
+
+            &:hover{
+                color: black;
+            }
+        }
+    }
+    .service-active{
+        font-size: 1.6rem;
+        color: white;
+        font-weight: bold;
+    }
+
+    .social-media{
+        padding-top: 20px;
+        align-self: flex-start;
+        grid-column: 3/4;
+        display: flex;
+        flex-direction: column;
+        align-items: flex-start;
+        
+        a{
+            padding-bottom: 20px;
+            color: white;
+            font-size: 1rem;
+
+            &:hover{
+                color: black;
+            }
+        }
+    }
+
+    .subscribe{
+        color: white;
+        padding-top: 20px;
+        grid-column: 5/6;
+
+        .keep-in-touch{
+            font-size: 2rem;
+            font-weight: bold;
+        }
+
+        .keep-ex{
+            font-size: .8rem;
+        }
+        form{
+            align-self: flex-start;
+            display: flex;
+            justify-content: left;
+            
+        }
+        .input-footer{
+            border: 1px solid white;
+            border-right: none;
+            background-color: #E26340;
+            outline: none;
+            border-bottom-left-radius: 5px;
+            border-top-left-radius: 5px;
+            height: 50px;
+            font-size: 1.1rem;
+            width: 250px;
+            color: white;
+        }
+        .label-footer{
+            background-color: white;
+            color: black;
+            font-size: 1.1rem;
+            font-weight: bold;
+            z-index: 2;
+            height: 50px;
+            width: 120px;
+            border-bottom-right-radius: 5px;
+            border-top-right-radius: 5px;
+            text-align: center;
+            border: none;
+            outline: none;
+            &:hover{
+                color: #E26340;
+            }
+        }
+    }
+
+    
 }

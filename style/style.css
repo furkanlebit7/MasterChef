@@ -252,6 +252,7 @@ nav {
 }
 
 .section-yemek-tarifleri .yemek-tarifleri-content .card-up-l {
+  color: black;
   padding-bottom: 10px;
   border: black 1px solid;
   width: -webkit-min-content;
@@ -265,6 +266,28 @@ nav {
   -ms-grid-column: 1;
   -ms-grid-column-span: 3;
   grid-column: 1/4;
+  overflow: hidden;
+}
+
+.section-yemek-tarifleri .yemek-tarifleri-content .card-up-l img {
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+}
+
+.section-yemek-tarifleri .yemek-tarifleri-content .card-up-l h4, .section-yemek-tarifleri .yemek-tarifleri-content .card-up-l p {
+  color: black;
+}
+
+.section-yemek-tarifleri .yemek-tarifleri-content .card-up-l:hover img {
+  background-size: inherit;
+  -webkit-transform: scale(1.7) rotate(25deg);
+          transform: scale(1.7) rotate(25deg);
+}
+
+.section-yemek-tarifleri .yemek-tarifleri-content .card-image-up {
+  overflow: hidden;
 }
 
 .section-yemek-tarifleri .yemek-tarifleri-content .card-up-r {
@@ -281,6 +304,24 @@ nav {
   -ms-grid-column: 4;
   -ms-grid-column-span: 3;
   grid-column: 4/7;
+  overflow: hidden;
+}
+
+.section-yemek-tarifleri .yemek-tarifleri-content .card-up-r img {
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+}
+
+.section-yemek-tarifleri .yemek-tarifleri-content .card-up-r h4, .section-yemek-tarifleri .yemek-tarifleri-content .card-up-r p {
+  color: black;
+}
+
+.section-yemek-tarifleri .yemek-tarifleri-content .card-up-r:hover img {
+  background-size: inherit;
+  -webkit-transform: scale(1.7) rotate(25deg);
+          transform: scale(1.7) rotate(25deg);
 }
 
 .section-yemek-tarifleri .yemek-tarifleri-content .yemek-name {
@@ -309,8 +350,166 @@ nav {
   grid-column: span 2;
 }
 
+.section-yemek-tarifleri .yemek-tarifleri-content .card-down img {
+  -webkit-transition: -webkit-transform .5s ease-in-out;
+  transition: -webkit-transform .5s ease-in-out;
+  transition: transform .5s ease-in-out;
+  transition: transform .5s ease-in-out, -webkit-transform .5s ease-in-out;
+}
+
+.section-yemek-tarifleri .yemek-tarifleri-content .card-down h5, .section-yemek-tarifleri .yemek-tarifleri-content .card-down p {
+  color: black;
+}
+
+.section-yemek-tarifleri .yemek-tarifleri-content .card-down:hover img {
+  background-size: inherit;
+  -webkit-transform: scale(1.7) rotate(25deg);
+          transform: scale(1.7) rotate(25deg);
+}
+
+.section-yemek-tarifleri .yemek-tarifleri-content .card-image-down {
+  overflow: hidden;
+}
+
 .section-master img {
   height: 350px;
   width: 100%;
+}
+
+.section-footer {
+  background-color: #E26340;
+  height: 100%;
+  width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5% 1fr 1fr 1fr 1fr 5%;
+      grid-template-columns: 5% 1fr 1fr 1fr 1fr 5%;
+  font-family: 'Poppins', sans-serif;
+}
+
+.section-footer .service {
+  padding-top: 20px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.section-footer .service a {
+  padding-bottom: 13px;
+  color: white;
+  font-size: 1rem;
+}
+
+.section-footer .service a:hover {
+  color: black;
+}
+
+.section-footer .service-active {
+  font-size: 1.6rem;
+  color: white;
+  font-weight: bold;
+}
+
+.section-footer .social-media {
+  padding-top: 20px;
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  -ms-grid-column: 3;
+  -ms-grid-column-span: 1;
+  grid-column: 3/4;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -webkit-box-align: start;
+      -ms-flex-align: start;
+          align-items: flex-start;
+}
+
+.section-footer .social-media a {
+  padding-bottom: 20px;
+  color: white;
+  font-size: 1rem;
+}
+
+.section-footer .social-media a:hover {
+  color: black;
+}
+
+.section-footer .subscribe {
+  color: white;
+  padding-top: 20px;
+  -ms-grid-column: 5;
+  -ms-grid-column-span: 1;
+  grid-column: 5/6;
+}
+
+.section-footer .subscribe .keep-in-touch {
+  font-size: 2rem;
+  font-weight: bold;
+}
+
+.section-footer .subscribe .keep-ex {
+  font-size: .8rem;
+}
+
+.section-footer .subscribe form {
+  -ms-flex-item-align: start;
+      align-self: flex-start;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: left;
+      -ms-flex-pack: left;
+          justify-content: left;
+}
+
+.section-footer .subscribe .input-footer {
+  border: 1px solid white;
+  border-right: none;
+  background-color: #E26340;
+  outline: none;
+  border-bottom-left-radius: 5px;
+  border-top-left-radius: 5px;
+  height: 50px;
+  font-size: 1.1rem;
+  width: 250px;
+  color: white;
+}
+
+.section-footer .subscribe .label-footer {
+  background-color: white;
+  color: black;
+  font-size: 1.1rem;
+  font-weight: bold;
+  z-index: 2;
+  height: 50px;
+  width: 120px;
+  border-bottom-right-radius: 5px;
+  border-top-right-radius: 5px;
+  text-align: center;
+  border: none;
+  outline: none;
+}
+
+.section-footer .subscribe .label-footer:hover {
+  color: #E26340;
 }
 /*# sourceMappingURL=style.css.map */
