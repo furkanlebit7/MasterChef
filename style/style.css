@@ -29,13 +29,14 @@ li {
 }
 
 header {
+  background-color: #654B3C;
   height: 100vh;
   width: 100%;
   z-index: 1;
   position: relative;
 }
 
-nav {
+header nav {
   height: 100px;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -48,7 +49,7 @@ nav {
   background-color: rgba(0, 0, 0, 0.4);
 }
 
-.nav-links {
+header .nav-links {
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -59,14 +60,14 @@ nav {
           align-items: center;
 }
 
-.nav-links .nav-item {
+header .nav-links .nav-item {
   color: #EBEBEB;
   font-size: .95rem;
   font-weight: 400;
   font-family: 'Poppins', sans-serif;
 }
 
-.main-text {
+header .main-text {
   position: absolute;
   font-size: 6rem;
   top: 30%;
@@ -78,7 +79,7 @@ nav {
   font-family: 'Purple Purse', cursive;
 }
 
-.resmi-websitesi {
+header .resmi-websitesi {
   font-family: 'Qwigley', cursive;
   font-size: 4rem;
   color: white;
@@ -89,7 +90,7 @@ nav {
           transform: translateX(-50%);
 }
 
-.main-explanation {
+header .main-explanation {
   position: absolute;
   bottom: 10%;
   left: 50%;
@@ -100,7 +101,7 @@ nav {
   font-size: 1.4rem;
 }
 
-.background-img {
+header .background-img {
   height: 100%;
   width: 100%;
   position: absolute;
@@ -118,6 +119,8 @@ nav {
 }
 
 .section-seflerimiz {
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#654B3C), to(#F5F5F5));
+  background-image: linear-gradient(#654B3C, #F5F5F5);
   height: 90vh;
   display: -ms-grid;
   display: grid;
@@ -176,6 +179,8 @@ nav {
   display: grid;
   -ms-grid-columns: 5% 1fr 5%;
       grid-template-columns: 5% 1fr 5%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f5f5f5), to(#f9f9f9));
+  background-image: linear-gradient(#f5f5f5, #f9f9f9);
 }
 
 .section-yarismacilar .yarismacilar-content {
@@ -193,6 +198,7 @@ nav {
 }
 
 .section-yarismacilar .yarismacilar-content .card {
+  background-color: transparent;
   border: none;
   -ms-grid-column-align: center;
       justify-self: center;
@@ -202,6 +208,25 @@ nav {
   -ms-flex-line-pack: center;
       align-content: center;
   width: 220px;
+}
+
+.section-yarismacilar .yarismacilar-content .card .card-image {
+  border-radius: 20px;
+  background: #F7F7F7;
+  -webkit-box-shadow: 22px 22px 70px #838383,  -22px -22px 70px #ffffff;
+          box-shadow: 22px 22px 70px #838383,  -22px -22px 70px #ffffff;
+  -webkit-transition: .3s ease-in-out;
+  transition: .3s ease-in-out;
+  -webkit-filter: grayscale(100%);
+          filter: grayscale(100%);
+}
+
+.section-yarismacilar .yarismacilar-content .card .card-image:hover {
+  background: #E26340;
+  -webkit-box-shadow: 40px 40px 88px #8c3d28,  -40px -40px 88px #ff8958;
+          box-shadow: 40px 40px 88px #8c3d28,  -40px -40px 88px #ff8958;
+  -webkit-filter: grayscale(0);
+          filter: grayscale(0);
 }
 
 .section-yarismacilar .yarismacilar-content .card .card-name {
@@ -234,6 +259,8 @@ nav {
   display: grid;
   -ms-grid-columns: 5% 1fr 5%;
       grid-template-columns: 5% 1fr 5%;
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#f9f9f9), to(#FFC2B1));
+  background-image: linear-gradient(#f9f9f9, #FFC2B1);
 }
 
 .section-yemek-tarifleri .yemek-tarifleri-content {
@@ -371,9 +398,64 @@ nav {
   overflow: hidden;
 }
 
-.section-master img {
-  height: 350px;
+.section-master {
+  height: 100%;
   width: 100%;
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 5% 2fr 1fr 2fr 5%;
+      grid-template-columns: 5% 2fr 1fr 2fr 5%;
+  color: white;
+  background-color: #231F20;
+  padding: 30px 0px;
+}
+
+.section-master .master-left {
+  -ms-grid-column: 2;
+  -ms-grid-column-span: 1;
+  grid-column: 2/3;
+  text-align: right;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.section-master .master-right {
+  text-align: left;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-direction: column;
+          flex-direction: column;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+}
+
+.section-master .master-logo {
+  text-align: center;
+  -ms-grid-column-align: center;
+      justify-self: center;
+}
+
+.section-master .master-card {
+  font-family: 'Rancho', cursive;
+}
+
+.section-master .master-card .master-header {
+  font-size: 2rem;
+  color: #E26340;
+}
+
+.section-master .master-card .master-ex {
+  font-size: 1.2rem;
 }
 
 .section-footer {
@@ -482,6 +564,7 @@ nav {
 }
 
 .section-footer .subscribe .input-footer {
+  padding-left: 5px;
   border: 1px solid white;
   border-right: none;
   background-color: #E26340;
