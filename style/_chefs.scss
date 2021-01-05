@@ -1,0 +1,130 @@
+.portofolio{
+    color: white;
+    background: radial-gradient(#165B8F,#222024);
+}
+
+.nav{
+    min-height: 10vh;
+    width: 90%;
+    margin:auto;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px 0px;
+}
+.burger{
+    cursor: pointer;
+}
+
+
+.burger div{
+    box-shadow: 2px 2px 2px rgba(0,0,0,0.5);
+    width: 40px;
+    height: 3px;
+    background-color:#E26340;
+    margin: 7px;
+    transition: all 0.3s ease;
+}
+
+.toggle .line1{
+    transform: rotate(-45deg) translate(-5px,5px);
+}
+.toggle .line2{
+opacity: 0;
+}
+.toggle .line3{
+        transform: rotate(45deg) translate(-5px,-5px);
+}
+
+
+.chef{
+    height: 90vh;
+    display: grid;
+    grid-template-columns: 5% 1fr 1fr 1fr 5%;
+}
+
+.details{
+    grid-column: 2/3;
+    align-self: flex-end;
+
+    h1{
+        font-size: 3.7rem;
+        font-weight: 700;
+    }
+    h2{
+        font-size: 2.5rem;
+        font-weight: 600;
+    }
+    p{
+        font-size:1.5rem ;
+        font-family: 'Post No Bills Jaffna ExtraBold', sans-serif;
+        padding: 20px 0px 50px 0px;
+        letter-spacing: 1px;
+    }
+}
+.hero{
+    display: flex;
+    align-self: center;
+    justify-self: center;
+}
+
+.hero img{
+    transition: transform 0.3s ease-out;
+    cursor: pointer;
+}
+
+.chef-right{
+    transform: translate(0%,10%);
+}
+
+.chef-left{
+    transform: translate(0%,-10%);
+}
+
+.hero:hover .chef-left{
+    transform: translate(0%,0%);
+}
+.hero:hover .chef-right{
+    transform: translate(0%,0%);
+}
+
+
+.pages{
+    position: absolute;
+    right: 5%;
+    top: 50%;
+    transform: translateY(-50%);
+}
+.pages > div{
+    display: flex;
+    justify-self: space-between;
+    align-items: center;
+}
+
+.pages h3{
+    margin: 0px;
+    font-size: 1.7rem;
+    padding: 30px;
+}
+
+.pages svg{
+    cursor: pointer;
+    transform: scale(1.3);
+    opacity: 0.5;
+}
+
+.pages svg.active{
+    opacity: 1;
+}
+
+.pages svg:hover{
+    animation: dot 0.5s ease-in-out infinite alternate;
+}
+
+@keyframes dot{
+    from{
+        transform: scale(1.3);
+    }to{
+        transform: scale(2);
+    }
+}
