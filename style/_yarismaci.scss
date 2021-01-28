@@ -1,0 +1,25 @@
+.yarismaci{
+    background: radial-gradient(rgba(226,99,64,0.8),rgba(87,83,82,1));
+}
+
+.yarismaci-section{
+    padding-top: 40px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.yarismaci-des{
+    font-family: 'Poppins', sans-serif;
+    width: 50%;
+    line-height: 3;
+
+    h3{
+        color:white;
+        font-size: 2rem;
+    }
+    p{
+        font-size: 1rem;
+        color: white;
+    }
+}

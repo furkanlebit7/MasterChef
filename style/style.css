@@ -598,7 +598,7 @@ header .background-img {
 
 .portofolio {
   color: white;
-  background: radial-gradient(#165B8F, #222024);
+  background: radial-gradient(#165b8f, #222024);
 }
 
 .nav {
@@ -626,7 +626,7 @@ header .background-img {
           box-shadow: 2px 2px 2px rgba(0, 0, 0, 0.5);
   width: 40px;
   height: 3px;
-  background-color: #E26340;
+  background-color: #e26340;
   margin: 7px;
   -webkit-transition: all 0.3s ease;
   transition: all 0.3s ease;
@@ -674,12 +674,13 @@ header .background-img {
 
 .details p {
   font-size: 1.5rem;
-  font-family: 'Post No Bills Jaffna ExtraBold', sans-serif;
+  font-family: "Post No Bills Jaffna ExtraBold", sans-serif;
   padding: 20px 0px 50px 0px;
   letter-spacing: 1px;
 }
 
 .hero {
+  overflow: hidden;
   display: -webkit-box;
   display: -ms-flexbox;
   display: flex;
@@ -714,6 +715,16 @@ header .background-img {
 .hero:hover .chef-right {
   -webkit-transform: translate(0%, 0%);
           transform: translate(0%, 0%);
+}
+
+.somer,
+.danilo {
+  position: absolute;
+  top: 0%;
+  left: 0%;
+  width: 100%;
+  opacity: 0;
+  pointer-events: none;
 }
 
 .pages {
@@ -978,5 +989,37 @@ header .background-img {
     -webkit-transform: translateY(-20%);
             transform: translateY(-20%);
   }
+}
+
+.yarismaci {
+  background: radial-gradient(rgba(226, 99, 64, 0.8), #575352);
+}
+
+.yarismaci-section {
+  padding-top: 40px;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-pack: distribute;
+      justify-content: space-around;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.yarismaci-des {
+  font-family: 'Poppins', sans-serif;
+  width: 50%;
+  line-height: 3;
+}
+
+.yarismaci-des h3 {
+  color: white;
+  font-size: 2rem;
+}
+
+.yarismaci-des p {
+  font-size: 1rem;
+  color: white;
 }
 /*# sourceMappingURL=style.css.map */

@@ -1,0 +1,23 @@
+
+
+[
+    {
+        "ID":1,
+        "name":"Arem Yüce",
+        "info":"1998 Antalya doğumlu Arem Yüce, aslen Diyarbakırlı. İlkokul ve lise eğitimini Antalya’da tamamlayan Arem Yüce, Aşçılık Meslek Lisesi'nin Mutfak Sanatları bölümünden mezundur. Üniversite eğitimini Muğla Sıtkı Kocaman Turizm Fakültesi'nde tamamlayan Yüce, bölgesel ve ulusal birçok yarışmada ödüller almıştır. 3 yıl önce babası ile birlikte bir  işletme açmaya karar veren yarışmacı, kendi restoranında    şeflik yapmaya devam etmektedir.",
+        "image":"./images/after/yarismaciCut/aremcut.png"
+    },
+    {
+        "ID":2,
+        "name":"Ayyüce Kamit",
+        "info":"1996 yılında Sakarya’da dünyaya gelen Ayyüce Kamit, 1.68 boyunda ve 45 kilodur. Lise sona kadar Sakarya’da eğitim gören Ayyüce, Bilgisayar Destekli Tasarım ve Animasyon bölümünde eğitimini tamamlamıştır. Bunun akabinde, Mutfak Sanatları Akademisi’nde profesyonel aşçılık eğitimi alan Ayyüce, 360 İstanbul adlı restaurantta 4 aylık stajını tamamladıktan sonra bir yıl da aktif olarak orada çalışmaya devam etmiştir.  Ardından Marmaris Grand Azur Hotel’in İtalyan Mutfağı’nda üç ay çalışan Ayyüce, İstanbul’a döndüğünde Nicole Restoran’da işe başlamış ve son olarak, 2 yıl pastanede çalışmıştır.MasterChef 2020’nin ana kadrosunda yer almaya hak kazanan Ayyüce Kamit, mutfak ile yakından ilgilenmektedir.",
+        "image":"./images/after/yarismaciCut/ayyücecut.png"
+    },
+    {
+        "ID":3,
+        "name":"Barbaros Yoloğlu",
+        "info":"Samsun’un Alaçam ilçesinde doğan Barbaros Yoloğlu, liseye başlayana dek güreş ve farklı spor dalları ile yakından ilgilenmiştir. Güreşi bıraktıktan sonra Turizm Lisesi’ne gitmeye karar veren Yoloğlu, bir süre turizm bölgelerinde stajyer öğrenci olarak çalışmış; ardından üniversite eğitimini almak için gittiği Erzurum’da, uzun bir süre çalışma hayatına devam etmemiştir.2 sene önce tekrar mutfakta çalışmaya başlayan Barbaros Yoloğlu, kariyer planlarını gerçekleştirmek ve hedeflediklerini elde etmek için MasterChef’e başvurmuş, ana kadroya dâhil olmaya hak kazanarak, bu sezonun 16 yarışmacısından biri olmuştur.",
+        "image":"./images/after/yarismaciCut/barbaroscut.png"
+    }
+
+]
